@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="talento">
+    <meta name="description" content="Diseño web con COEX">
+    <meta name="keywords" content="Aprende logica, html, css ,javascript, DB, vue.js, laravel">
+    
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./jicon.png">
+</head>
+<body>
+    <ma>
+
+    <!--ejercicio 1-->
+    <section>
+        <!--encabezado con titulo-->
+    <header>
+       <h1>EJERCICIOS DOM</h1> 
+       <h3>Ejercicio 1</h3>
+    </header>
+
+    <!--formulario-->
+    <form action="#">
+        <select id="indexcolor" >
+            <option value="ff0000">red</option>
+            <option value="0000ff">blue</option>
+            <option value="008000">green</option>
+            <option value="ffa500">orange</option>
+            <option value="800080">purple</option>
+        </select>
+        <label for="">Numbre index selected</label>
+        <input type="number" id="numero">
+        <label for="">text selected:</label>
+        <input type="text" id="texto1">
+        <label for="">color value selected:</label>
+        <input type="text" id="texto2">
+        <label for=""></label>
+        <input type="color" id="color">
+    </form>
+    </section>
+
+<!--ejercicio 2-->
+<section>
+<label for="descripcion">Decripcion</label>
+<textarea name="" id="texto" cols="100" rows="5" required></textarea>
+<input type="button" id="btntext" value="validar">
+<button>hecho</button>
+
+</section>
+
+<!--ejercicio3-->
+<section class="expresiones">
+    <p>expresiones regulares</p>
+    <label for="txtcar">Ejemplo expresion regular: letra + vocal</label>
+    <input id="textoRegular" type="text">
+    <div id="rtaRegular"></div>
+    <button id="btnRegular">validar</button>
+
+    <label for="txtcar2">Ejemplo expresion regular: letra + vocal + numero + longitud</label>
+    <input id="textoRegular2" type="text">
+    <div id="rtaRegular2"></div>
+    <button id="btnRegular2">validar</button>
+
+    <label for="txtnum">Ejemplo expresion regular: numeros</label>
+    <input id="textoRegular3" type="number">
+    <div id="rtaRegular3"></div>
+    <button id="btnRegular3">validar</button>
+
+
+</section>
+
+<!--ejercicio4-->
+<section class="keyup">
+    <label for="texto">Ingrese un texto</label>
+    <input type="text">
+
+    <label for="eventoKeyup">Evento keyup ingrese un texto (max 50 caracteres)</label>
+    <textarea name="" id="areakey" cols="30" rows="10"></textarea>
+    <p>numero de caracteres faltantes</p> <span id="contadorLetras"></span>
+</section>
+
+<!--ejercicio5-->
+<section class="ejercicio5">
+    <h3 class="textoEjer5">Galeria</h3>
+    <div class="imagenGrande">
+        <img class="imagenG" name="primera" onclick="muestra('primera')" src="./source/image1.jpg" width="500px" height="500px" alt="">
+    </div>
+    <div class="imagenesPequeñas">
+        <img class="imagenP" id="imgUno" src="./source/image2.jpg" width="100px" height="100px" alt="">
+        <img class="imagenP" id="imgDos" src="./source/image3.jpg" width="100px" height="100px" alt="">
+        <img class="imagenP" id="imgTres" src="./source/imagen4.jpg" width="100px" height="100px" alt="">
+        <img class="imagenP" id="imgCuatro" src="./source/imagen5.jpg" width="100px" height="100px" alt="">
+    </div>
+</section>
+
+<!--ejercicio6-->
+<section class="ejercicio6">
+
+    <div class="botones">
+        <input type="button" id="btnCrear" value="crear">
+        <input type="button" id="btnDup" value="duplicar">
+        <input type="button" id="btnEliminar" value="eliminar">
+    </div>
+   
+    <div id="copia">
+        <p id="nuevoTexto"></p>
+    </div>
+
+</section>
+
+<!--ejercicio7-->
+<section class="ejercicio7">
+    <div class="container">
+        <div id="principal" class="card card-body col-sm-12 ">
+            <h4 class="title fs-1">agregar elementos:</h4>
+            <form class="form col-auto mb-3" id="frmLista">
+                <input type="text" id="txtElemento" class="form-control" placeholder="escribir elemento">
+                <input type="submit" value="Agregar" class="btn btn-light btn-outline-primary">
+            </form>
+            <h4 class="title fs-2">Elementos</h4>
+            <ul id="elementos" class="list-group">
+                <li class="list-group-item">Elemento 1 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button></li>
+                <li class="list-group-item">
+                    elemento 1
+                    <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button>
+                </li>
+                <li class="list-group-item">
+                    elemento 1
+                    <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button>
+                </li>
+                <li class="list-group-item">
+                    elemento 1
+                    <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button>
+                </li>
+                <li class="list-group-item">
+                    elemento 1
+                    <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--pie de pagina-->
+    <footer>
+        <section>
+            <p class="develop">German Moreno | Talento Coex</p>
+        </section>
+    </footer>
+    </main>
+     <!--sript javascript-->
+    <script src="./main.js"></script>
+</body>
+</html>
